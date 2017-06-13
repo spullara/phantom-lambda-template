@@ -20,7 +20,7 @@ exports.handler = function(event, context, callback) {
     });
 
     phantom.on('exit', code => {
-        callback(null, 'fin!!');
+        callback(null, buf);
     });
 
 };
