@@ -1,5 +1,8 @@
-console.log('start phantom');
-setTimeout(function() {
-    console.log('Boo from phantom');
+var page = require('webpage').create();
+var system = require('system');
+page.open(system.args[1], function(status) {
+    if(status === "success") {
+        console.log(page.content);
+    }
     phantom.exit();
-}, 1000);
+});
