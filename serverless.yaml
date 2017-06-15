@@ -9,8 +9,10 @@ Resources:
         Properties:
             Handler: index.handler
             Runtime: nodejs6.10
-            Description: Some sweet lambda action
+            Description: Extract an XPath from web pages and convert to JSON
             CodeUri: .
+            MemorySize: 1024
+            Timeout: 300
 Outputs:
   LambdaFunction:
     Description: The bucket that holds all the builds
