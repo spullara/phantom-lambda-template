@@ -19,9 +19,9 @@ exports.handler = function(event, context, callback) {
         });
 
         phantom.on('exit', code => {
-            callback(null, result);
+            callback(null, JSON.parse(result));
         });
     } else {
-        callback(JSON.stringify({"error": "url and xpath must be present"}))
+        callback({"error": "url and xpath must be present"})
     }
 };
