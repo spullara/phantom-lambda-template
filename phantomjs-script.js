@@ -7,9 +7,9 @@ phantom.onError = function (msg, trace) {
     phantom.exit();
 };
 
-page.onConsoleMessage = function(msg, lineNum, sourceId) {
-    console.log('CONSOLE: ' + msg + ' (from line #' + lineNum + ' in "' + sourceId + '")');
-};
+// page.onConsoleMessage = function(msg, lineNum, sourceId) {
+//     console.log('CONSOLE: ' + msg + ' (from line #' + lineNum + ' in "' + sourceId + '")');
+// };
 
 page.open(system.args[1], function(status) {
     if (status !== 'success') {
