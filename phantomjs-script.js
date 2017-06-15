@@ -467,7 +467,7 @@ page.open(system.args[1], function(status) {
                         }
                     }
                     var children = [];
-                    for (index in childNodes) {
+                    for (var index in childNodes) {
                         children.push(convert(childNodes[index]));
                     }
                     node["children"] = children;
