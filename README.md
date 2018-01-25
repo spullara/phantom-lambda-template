@@ -38,3 +38,4 @@ npm run deploy-pipeline -- --parameter-overrides \
 1. Checkout [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home)
 1. Watch as [AWS CodePipeline](https://console.aws.amazon.com/codepipeline/home) creates a new stack
 1. Once the stacks are finished test your [AWS Lambda](https://console.aws.amazon.com/lambda/home)
+
