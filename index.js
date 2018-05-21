@@ -19,6 +19,7 @@ exports.handler = function(event, context, callback) {
         });
 
         phantom.on('exit', code => {
+            console.log('exit: ' + result);
             callback(null, JSON.parse(result));
         });
     } else {
