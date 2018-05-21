@@ -14,11 +14,11 @@
   },
   "homepage": "https://github.com/justengland/phantom-lambda-template",
   "dependencies": {
-    "mocha": "^3.2.0",
-    "phantomjs-prebuilt": "^2.1.14"
+    "mocha": "^5.2.0",
+    "phantomjs-prebuilt": "^2.1.16"
   },
   "devDependencies": {
-    "aws-sdk": "^2.7.8"
+    "aws-sdk": "^2.244.1"
   },
   "scripts": {
     "deploy-pipeline": "aws cloudformation deploy --template-file pipeline.yaml --stack-name \"phantom-pipeline\" --capabilities CAPABILITY_IAM",
